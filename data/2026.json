@@ -1,0 +1,22 @@
+{
+  "season": 2026,
+  "lastVerified": "2026-04-21",
+  "sources": [
+    "FIA Official Entry List",
+    "Formula1.com",
+    "Team Official Websites"
+  ],
+  "teams": [
+    { "team": "McLaren", "powerUnit": "Mercedes", "drivers": ["Lando Norris", "Oscar Piastri"] },
+    { "team": "Ferrari", "powerUnit": "Ferrari", "drivers": ["Charles Leclerc", "Lewis Hamilton"] },
+    { "team": "Mercedes", "powerUnit": "Mercedes", "drivers": ["George Russell", "Andrea Kimi Antonelli"] },
+    { "team": "Red Bull Racing", "powerUnit": "Red Bull Ford", "drivers": ["Max Verstappen", "Isack Hadjar"] },
+    { "team": "Racing Bulls", "powerUnit": "Red Bull Ford", "drivers": ["Liam Lawson", "Arvid Lindblad"] },
+    { "team": "Aston Martin", "powerUnit": "Honda", "drivers": ["Fernando Alonso", "Lance Stroll"] },
+    { "team": "Alpine", "powerUnit": "Mercedes", "drivers": ["Pierre Gasly", "Franco Colapinto"] },
+    { "team": "Williams", "powerUnit": "Mercedes", "drivers": ["Alex Albon", "Carlos Sainz"] },
+    { "team": "Haas", "powerUnit": "Ferrari", "drivers": ["Esteban Ocon", "Oliver Bearman"] },
+    { "team": "Audi", "powerUnit": "Audi", "drivers": ["Nico Hülkenberg", "Gabriel Bortoleto"] },
+    { "team": "Cadillac", "powerUnit": "Ferrari", "drivers": ["Valtteri Bottas", "Sergio Pérez"] }
+  ]
+}
