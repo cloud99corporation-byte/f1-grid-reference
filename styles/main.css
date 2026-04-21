@@ -1,34 +1,32 @@
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  margin: 0;
-  padding: 2rem;
-  background: #f7f7f7;
-  color: #222;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-header h1 {
-  margin-bottom: 0.25rem;
+.card {
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: transform 0.15s ease;
 }
 
-.meta {
-  color: #555;
-  font-size: 0.9rem;
+.card:hover {
+  transform: translateY(-3px);
 }
 
-.team {
-  background: white;
-  border-left: 4px solid #e10600;
-  padding: 1rem;
-  margin: 1rem 0;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+.card img {
+  max-width: 120px;
+  margin-bottom: 1rem;
 }
 
-footer {
-  margin-top: 3rem;
-  font-size: 0.85rem;
+.engine {
+  font-weight: 600;
   color: #666;
 }
-footer a {
-  color: #e10600;
-  text-decoration: none;
+
+.drivers {
+  margin-top: 0.5rem;
 }
