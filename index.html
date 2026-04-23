@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>F1 Grid Reference – 2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles/main.css" />
+  styles/main.css
 </head>
 <body>
 
@@ -16,25 +16,45 @@
   </p>
 </header>
 
-<main id="grid" class="grid">
-  Loading grid…
-</main>
+<main id="grid" class="grid">Loading grid…</main>
 
 <footer>
   <p>
     Published by <strong>cloud99corporation-byte</strong> ·
-    <a href="https://github.com/cloud99corporation-byte/f1-grid-reference">
-      GitHub
-    </a>
+    https://github.com/cloud99corporation-byte/f1-grid-referenceGitHub</a>
   </p>
 </footer>
 
 <script>
 fetch("data/2026.json")
-  .then(response => response.json())
+  .then(r => r.json())
   .then(data => {
     const grid = document.getElementById("grid");
     grid.innerHTML = "";
+
+    data.teams.forEach(team => {
+      const slug = team.team.toLowerCase().replace(/\s+/g, "");
+
+      grid.innerHTML += `
+        <article class="card">
+          <div class="logo">
+            assets/logos/${slug}.svg
+          </div>
+          <h2>${team.team}</h2>
+          <p class="engine">${team.powerUnit}</p>
+          <p class="drivers">${team.drivers.join(" / ")}</p>
+        </article>
+      `;
+    });
+  })
+  .catch(() => {
+    document.getElementById("grid").textContent =
+      "Failed to load grid data.";
+  });
+</script>
+
+</body>
+</html>    grid.innerHTML = "";
 
     data.teams.forEach(team => {
       const slug = team.team
