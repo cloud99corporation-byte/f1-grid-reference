@@ -6,10 +6,6 @@ body {
   color: #222;
 }
 
-h1 {
-  margin-bottom: 0.25rem;
-}
-
 .meta {
   color: #555;
   font-size: 0.9rem;
@@ -25,16 +21,37 @@ h1 {
 .card {
   background: #ffffff;
   padding: 1.25rem;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
-.card h2 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+.logo {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.logo img {
+  max-height: 100%;
+  max-width: 120px;
+  opacity: 0.9;
 }
 
 .engine {
+  font-weight: 600;
+  color: #555;
+}
+
+.drivers {
+  margin-top: 0.5rem;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: #666;
+}.engine {
   font-weight: 600;
   color: #555;
 }
